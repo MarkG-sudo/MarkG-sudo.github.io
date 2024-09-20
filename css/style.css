@@ -110,8 +110,8 @@ nav {
 
 
 .head-bg {
-    /* border-bottom: 1px solid #b5da12; */
-    border-top: 1px solid #b5da12;
+    border-bottom: 1px solid #b5da12; 
+    /* border-top: 1px solid #b5da12; */
     /* position: absolute; */
     /* width: 100%; */
     /* height: 100%; */
@@ -163,13 +163,13 @@ nav {
 }
 
 .fade-in {
-    opacity: 0;
+    opacity: 0.5;
     transform: translateY(20px); /* Text moves down initially */
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
 
   p:hover .fade-in {
-  opacity: 1;
+  opacity: 2;
   transform: translateY(0); /* Bring it back to the original position */
 }
 
@@ -393,6 +393,7 @@ span {
 
 .text-port {
     margin-top: 20px;
+    font-size: 1.5rem;
 }
 
 
