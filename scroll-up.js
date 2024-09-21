@@ -19,3 +19,23 @@ scrollTopBtn.onclick = function() {
     behavior: "smooth"
   });
 };
+
+// nav disappering on scroll
+let lastScrollTop = 0;
+const scrollDelay = 300; // Time to wait before hiding the nav (in ms)
+
+window.addEventListener('scroll', function() {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Add the class after scrolling down for a short time
+  if (currentScroll > lastScrollTop && currentScroll > 50) {
+    setTimeout(function() {
+      document.documentElement.classList.add('scrolled'); // Add class to <html> element
+    }, scrollDelay);
+  } else if (currentScroll < lastScrollTop) {
+    // Remove the class when scrolling back to the top or up
+    document.documentElement.classList.remove('scrolled');
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+});
