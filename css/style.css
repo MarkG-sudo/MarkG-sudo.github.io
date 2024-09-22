@@ -15,8 +15,15 @@ body {
     background-color: black;
 }
 
+
 h1 {
+    font-size: 2rem;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
     margin-top: 10px;
+
 }
 
 h2 {
@@ -33,7 +40,7 @@ h3 {
     font-family: "Monoton", sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 20px;
+    font-size: 2opx;
 }
 
 h4 {
@@ -59,19 +66,29 @@ nav {
     align-items: center;
     background-color: #00000000;
     color: rgb(255, 255, 255);
-    padding:15px 20px 0px 20px;
+    padding: 15px 20px 0px 0px;
     margin-bottom: 40px;
     position: fixed;
     width: 100%;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-    transform: translateY(0); /* Start position */
-    opacity: 1; /* Fully visible */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Smooth transition */
+    transform: translateY(0);
+    /* Start position */
+    opacity: 1;
+    /* Fully visible */
+}
+
+nav img {
+    width: 30px;
+    /* opacity: 1; */
 }
 
 .scrolled nav {
-    transform: translateY(-100%); /* Pushes the nav up */
-      opacity: 0; /* Fade out */
-  }
+    transform: translateY(-100%);
+    /* Pushes the nav up */
+    opacity: 0;
+    /* Fade out */
+}
 
 .nav-flex {
     display: flex;
@@ -81,6 +98,10 @@ nav {
     gap: 30px;
 
 
+}
+
+.nav-flex img {
+    width: 30px;
 }
 
 .nav-flex a {
@@ -115,7 +136,8 @@ nav {
 
 .hero p {
     /* font-family: "SUSE", sans-serif; */
-    font-size: 21px;    
+    font-size: 21px;
+    font-weight: 500;
 }
 
 
@@ -150,18 +172,29 @@ nav {
     }
 }  */
 
- .head-bg img {
-    width: 400px; 
+.head-bg img {
+    width: 400px;
     /* height: 50px; */
     /* padding-bottom: 50px; */
 
+}
+
+.titles {
+    /* margin-left: 70px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 20px 50px;
 }
 
 .about {
     margin-top: 1%;
     width: 100%;
     margin-bottom: 10%;
+    color: #ffffff;
+    height: 100vh;
+    
 }
+
 
 .text-about {
     width: 70%;
@@ -173,42 +206,42 @@ nav {
     /* font-family: "Zen Dots", sans-serif;
   font-weight: 400;
   font-style: normal;
-} */
+ */
 }
 
 .fade-in {
     opacity: 0.5;
-    transform: translateY(20px); /* Text moves down initially */
+    transform: translateY(20px);
+    /* Text moves down initially */
     transition: opacity 1s ease-out, transform 1s ease-out;
     color: #b5da12;
-  }
-
-  p:hover .fade-in {
-  opacity: 2;
-  transform: translateY(0); /* Bring it back to the original position */
-  font-family: "Advent Pro";
-  
 }
 
-.info {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px; */
+p:hover .fade-in {
+    opacity: 2;
+    transform: translateY(40px);
+    /* Bring it back to the original position */
+    /* font-family: "Advent Pro"; */
+
+}
+
+.skills {
+    height: 100vh;
+}
+
+.info-container {
     display: flex;
     justify-content: space-between;
-    padding: 0px 50px;
-    height: 40vh;
+    padding: 0px 40px;
+    height: 50vh;
     /* width: 100%; */
-    height: 55vh;
     background-color: #222020;
-    margin: 0% 30px 0% 30px;
+    margin: 0% 50px 0% 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px  #3d3b3b42;
-    
+    /* box-shadow: 10px 10px 10px #3d3b3b42; */
+
 }
 
 
@@ -220,16 +253,48 @@ nav {
 
 
 .info-left-2 {
-    padding-top: 1%;
+    /* padding-top: 10px; */
+    /* padding-bottom: 30px; */
+
+}
+
+.flex-skills {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 19px;
+    text-align: center;
+
+}
+
+.flex-skills img {
+    width: 50px;
+}
+
+.flex-skills span {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 600;
+
 
 }
 
 
 .info-right {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 2;
+    grid-row-gap: 19px;
+    text-align: center;
     line-height: 1.6;
     width: 50%;
-    text-align: right;
-    margin-right: 40px;
+    text-align: center;
+    margin-right: 0px;
 }
 
 .info h3 {
@@ -268,12 +333,19 @@ nav {
 }
 
 
-.services {
+.services-container {
     height: 150vh;
-    margin: 20% 40px;
+    margin: 20px 40px;
 
 }
 
+#Portfolio {
+    margin-top: 10%;
+}
+
+.portfolio {
+    margin: 0px 30px 0px 30px;
+}
 
 .services-list {
     display: flex;
@@ -295,7 +367,7 @@ nav {
     font-family: "SUSE", sans-serif;
     font-size: 1rem;
     background-color: rgb(34, 32, 32);
-    box-shadow: 10px 10px 10px  #3d3b3b42;
+    /* box-shadow: 10px 10px 10px  #3d3b3b42; */
 }
 
 /* .skill-1:hover{
@@ -315,7 +387,7 @@ nav {
     font-family: "SUSE", sans-serif;
     font-size: 1rem;
     background-color: rgb(34, 32, 32);
-    box-shadow: 10px 10px 10px  #3d3b3b42;
+    /* box-shadow: 10px 10px 10px  #3d3b3b42; */
 }
 
 /* .skill-2:hover{
@@ -335,7 +407,7 @@ nav {
     font-family: "SUSE", sans-serif;
     font-size: 1rem;
     background-color: rgb(34, 32, 32);
-    box-shadow: 10px 10px 10px  #3d3b3b42;
+    /* box-shadow: 10px 10px 10px  #3d3b3b42; */
 }
 
 /* .skill-3:hover{
@@ -345,14 +417,7 @@ nav {
     
 } */
 
-h1 {
-    font-size: 2rem;
-    font-family: "Unbounded", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: <weight>; */
-    font-style: normal;
 
-}
 
 .name-services {
     font-family: "Cinzel", serif;
@@ -365,7 +430,7 @@ span {
 }
 
 .logos {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -374,11 +439,12 @@ span {
 
 .logos img {
     width: 200px;
+    opacity: 0.6;
 }
 
-.works {
+.works-container {
     /* height: 100%; */
-    margin: 20px 10px;
+    margin: 5% 25px 10% 20px;
     background-color: gray;
     border-radius: 15px;
     background-color: rgb(34, 32, 32)
@@ -423,15 +489,16 @@ span {
 
 
 .image-4-port img {
-    width: 500px;
+    width: 400px;
     height: auto;
-    border-radius: 15px;
+    border: 2px solid gray;
+    border-radius: 10px;
     padding-bottom: 20px;
     margin-bottom: 10px;
     /* filter: drop-shadow(20px 20px 10px rgb(124, 117, 117));
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.1); */
-    box-shadow: 10px 10px 15px 5px #726c6c42;
+    /* box-shadow: 10px 10px 15px 5px #726c6c42; */
 
 }
 
@@ -452,11 +519,11 @@ span {
 
 
 
-.contact {
-    margin-top: 90px;
+.contact-container {
+    margin-top: 30px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact-head {
@@ -464,7 +531,7 @@ span {
 }
 
 .info-contact {
-    margin-top: 10%;
+    margin-top: 10px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -483,6 +550,13 @@ span {
 .contact-info {
     display: flex;
     justify-content: space-around;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+form {
+    margin-top: 20px;
 }
 
 .form {
@@ -513,7 +587,7 @@ span {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
-    padding-right: 107px;
+    padding-right: 120px;
     border-radius: 5px;
     border: none;
     margin-bottom: 5px;
@@ -536,7 +610,7 @@ span {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
-    padding-right: 400px;
+    padding-right: 415px;
     border-radius: 5px;
     border: none;
     margin-bottom: 5px;
@@ -544,21 +618,31 @@ span {
 }
 
 .input-4 {
-    padding-top: 15px;
-    padding-bottom: 100px;
+    /* padding-top: 15px; */
+    /* padding-bottom: 150px; */
     padding-left: 10px;
-    padding-right: 400px;
+    /* padding-right: 415px; */
+    width: 590px;
+    height: 150px;
     border-radius: 5px;
     border: none;
+    margin-top: 5px;
     margin-bottom: 5px;
     background-color: rgb(44, 42, 42);
 }
+
+input:focus {
+    background-color: rgb(76, 79, 80); /* Change to any color you prefer */
+  }
+  
 
 .footer {
     margin: 20px;
     color: white;
     padding-bottom: 30px;
 }
+
+
 
 .socials {
     /* border: 2px solid gray; */
