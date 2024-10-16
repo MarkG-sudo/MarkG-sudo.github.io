@@ -200,7 +200,7 @@ nav img {
     width: 100%;
     margin-bottom: 2%;
     color: #ffffff;
-    height: 100vh;
+    height: 80vh;
     
 }
 
@@ -352,8 +352,10 @@ p:hover .fade-in {
 }
 
 .info-right span {
+    font-family: "Unbounded", sans-serif;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 200;
+    color: #b8aaaa;
 }
 
 .info-right h4 {
