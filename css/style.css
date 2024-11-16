@@ -774,3 +774,145 @@ input:focus {
 .scroll-top:hover {
     background-color: #2e3946;
 }
+
+/* For larger tablets (e.g., landscape mode or tablets close to desktop sizes) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .info-container {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .flex-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-port-cont {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+    }
+
+    nav img {
+        width: 15%;
+    }
+}
+
+/* For smaller tablets and larger phones */
+@media (max-width: 768px) and (min-width: 481px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        width: 20%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .info-left,
+    .info-right {
+        width: 100%;
+        border: none;
+    }
+
+    .flex-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-port-cont {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .image-4-port img {
+        width: 80%;
+    }
+}
+
+/* For phone screens */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        width: 25%;
+    }
+
+    .nav-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .head-bg img {
+        width: 90%;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .info-left,
+    .info-right {
+        width: 100%;
+    }
+
+    .flex-skills {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .img-port-cont {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .image-4-port img {
+        width: 100%;
+    }
+
+    .form {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .input-1,
+    .input-2,
+    .input-3,
+    .input-4 {
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .text-port {
+        font-size: 1.2rem;
+    }
+
+    .socials img {
+        width: 30px;
+    }
+}
