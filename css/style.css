@@ -484,8 +484,8 @@ span {
 }
 
 .logos img {
-    width: 200px;
-    opacity: 0.6;
+    width: 20%;
+    /* opacity: 0.6; */
 }
 
 .works-container {
