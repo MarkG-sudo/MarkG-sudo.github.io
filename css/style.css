@@ -18,6 +18,8 @@ body {
     /* ✅ double protection */
 }
 
+
+
 h1 {
     font-size: 2rem;
     font-family: "Unbounded", sans-serif;
@@ -251,6 +253,11 @@ nav img {
         text-align: center;
         height: auto;
         padding: 60px 0;
+    }
+
+    .hero-text p {
+        
+        margin-left: 45px;
     }
 
     .hero p {
@@ -513,10 +520,7 @@ ul {
         margin: 0 20px;
     }
 
-    .make-smaller {
-        width: 100%;
-    }
-
+    
     .info-left,
     .info-right {
         width: 100%;
@@ -542,7 +546,7 @@ ul {
 
 
     .skills {
-        margin-bottom: 80%;
+        margin-bottom: 280%;
     }
 
     .titles {
@@ -1013,12 +1017,11 @@ form {
 .socials {
     /* border: 2px solid gray; */
     border-radius: 40px;
-    margin: 20px;
+    margin: 0 auto;
     /* background-color: #5e5555; */
     width: 300px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-top: 10px;
+    padding-left: 80px;
+    /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 
@@ -1134,7 +1137,7 @@ form {
 
     .logos {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 40px;
         justify-content: center;
     }
 
