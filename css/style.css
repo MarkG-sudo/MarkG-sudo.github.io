@@ -546,7 +546,7 @@ ul {
 
 
     .skills {
-        margin-bottom: 280%;
+        margin-bottom: 240%;
     }
 
     .titles {
@@ -1270,7 +1270,7 @@ form {
     nav img {
         width: 15%;
     } */
-}
+
 
 /* For smaller tablets and larger phones */
 /* @media (max-width: 768px) and (min-width: 481px) {
